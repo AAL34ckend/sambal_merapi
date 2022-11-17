@@ -1,0 +1,280 @@
+*{
+	text-decoration:none;
+}
+body,html{
+	margin:0;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.bg-image{
+	position:relative;
+	left:0px;
+	right:0px;
+	background-size:cover;
+	height:100%;
+	background-image:url("assets/sambal.jpg");
+	box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.6);
+}
+.content{
+	position:absolute;
+	z-index:9999;
+	left:0;
+	right:0;
+}
+.navbar{
+	margin: 0px 40px;
+	display:flex;
+	justify-content:space-between;
+}
+.image{
+	display:flex;
+	align-items:center;
+	z-index:3;
+}
+.search{
+	padding:9px 0px 9px 20px;
+	outline:none;
+	border-bottom:1px solid #fff;
+	background-color:transparent;
+	border-right:none;
+	border-left:none;
+	border-top:none;
+	color:#fff;
+}
+.iconsearch{
+	color:#fff;
+	position:relative;
+	z-index:2;
+	left:15px;
+}
+::placeholder{
+	color:#fff;
+}
+.ul{
+	list-style-type:none;
+	cursor:pointer;
+}
+.li , .dropdown{
+	display:inline-block;
+	font-weight:thin;
+	color:#fff;
+	padding:0px 10px 0px 10px;
+	border:1px solid transparent;
+}
+.li:hover{
+	transition:border .3s ease-in;
+	padding-bottom:9px;
+	border-bottom:1px solid #f10;
+}
+.image .ul .li a{
+	text-decoration:none;
+	color:#fff;
+}
+.image .ul .li .a{
+	text-decoration:none;
+	color:#fff;
+}
+.icon{
+	padding:0px 5px;
+}
+.dropdown p:hover >.icon{
+	transform:rotate(180deg);
+}
+
+/*---------dropdown----------*/
+	
+.dropdown{
+	position:relative;
+}
+.dropdown-content{
+	position:absolute;
+	z-index:5;
+	display:none;
+	padding:10px 10px;
+	background-color:rgba(0,0,0,0.8);
+	color:#fff;
+	list-style-type:none;
+	width:120px;
+}
+
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+.dropdown-content li{
+	position:relative;
+	padding:10px;
+	border:2px solid transparent;
+}
+.dropdown-content li:hover{
+	transform:translate(5px);
+	transition:.5s;
+}
+.dropdown-content li:hover::after{
+	content:'';
+	position:absolute;
+	background:#f10;
+	width:40px;
+	height:2px;
+	left:10;
+	bottom:5;
+	transform:translate(2px);
+	transition:all .5s;
+}
+.a-home{
+	text-decoration:none;
+	color:#fff;
+}
+.a-home{
+	text-decoration:none;
+	color:#fff;
+}
+/*--------enddropdown--------*/
+
+/*-----------content----------*/
+.hor-layout{
+	display:flex;
+	padding-top:4rem;
+	position:relative;
+}
+.img-lay{
+	margin-top:-6rem;	
+	margin-left:-15rem;
+	position:absolute;
+	z-index:-2;
+}
+.ver-layout{
+	width:50%;
+	margin-top:3.6rem;
+	margin-left:30rem;
+	color:#fff;
+}
+.title-cont{
+	background-color:#f10;
+	color:#fff;
+	align-items:center;
+	width:60px;
+}
+.horizontal-lay{
+	display:flex;
+}
+.column{
+	width:30%;
+	padding-right:20px;
+}
+
+/*------------------row2-----------------*/
+
+.bg-lay-2{
+	height:125%;
+	background-image:url('assets/sabai.jpg');
+	background-size:cover;
+	box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.8);
+	margin-top:-10px;
+}
+.vert-layout2{
+	text-align:center;
+	color:#fff;
+	padding-top:100px;
+}
+.hor-layout2{
+	display:flex;
+	justify-content:space-around;
+}
+.display{
+	position:relative;
+}
+.overlay{
+	position:absolute;
+	width:100%;
+	background:rgba(0,0,0,0.0);
+	height:100%;
+	z-index:2;
+	top:0;
+	cursor:pointer;
+}
+.display:hover .overlay{
+	background:rgba(0,0,0,0.8);
+	transition:.3s;
+}
+.display:hover p{
+	top:40%;
+	opacity:100%;
+	transition:.3s;	
+}
+.job{
+	position:relative;
+	top:80%;
+	opacity:0%;
+}
+.weight{
+	font-size:28px;
+}
+.margin{
+	margin-bottom:-10px;
+}
+.padd{
+	padding:5px;
+	font-size:20px;
+}
+.padd:hover{
+	color:#ccc;
+	transition:.3s;
+}
+/*-----------Footer---------*/
+
+.footer{
+	background-color:#1a1a1a;
+	height:32%;
+}
+.foot-layout{
+	display:flex;
+	justify-content:space-around;
+	align-items:top;
+}
+h3{
+	color:#ccc;
+}
+.foot-list{
+	list-style-type:none;
+	cursor:pointer;
+	color:#808080;
+}
+.foot-list-cont:hover{
+	color:#fff;
+	transition:0.3s ease-in;
+	transform:translate(5px,0px);
+}
+.foot-title{
+	border:1px solid transparent;
+	position:relative;
+}
+.foot-title::after{
+	content:"";
+	position:absolute;
+	background-color:#f10;
+	width:30px;
+	height:2px;
+	bottom:-5;
+	left:0;
+}
+.foot-logo{
+	margin-left:-10px;
+}
+.lay-icon{
+	position:relative;
+	z-index:2;
+}
+.icons{
+	padding:5px;
+	border:1px solid #808080;
+}
+.icons:hover{
+	background-color:#fff;
+	color:#1a1a1a;
+}
+.cp{
+	background-color:#000;
+	color:#fff;
+	padding:5px;
+	text-align:center;
+	bottom:0;
+}
